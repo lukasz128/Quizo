@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Lato', ...defaultTheme.fontFamily.sans],
+        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
@@ -31,6 +31,9 @@ module.exports = {
         },
         error: {
           DEFAULT: '#FF0404',
+        },
+        disabled: {
+          DEFAULT: '#e0e0e0',
         },
       },
     },

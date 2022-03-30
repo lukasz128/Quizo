@@ -8,8 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "build:tailwind": "tailwindcss --input input.css --output tailwind.css --no-autoprefixer && tailwind-rn",
-    "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
+    "build:tailwind": "tailwindcss --input style.css --output tailwind.css --no-autoprefixer && tailwind-rn",
+    "dev:tailwind": "concurrently \"tailwindcss --input style.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
   },
   "dependencies": {
     "expo": "~44.0.0",
