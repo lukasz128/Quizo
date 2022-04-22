@@ -1,12 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
   content: ['./src/**/*.tsx', './App.tsx'],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
-      },
+      fontFamily: {sans: ['Roboto', ...defaultTheme.fontFamily.sans]},
       colors: {
         primary: {
           DEFAULT: '#388DF9',
@@ -20,24 +17,13 @@ module.exports = {
           800: '#076BED',
           900: '#0650B2',
         },
-        fb: {
-          DEFAULT: '#4267B2',
-        },
-        google: {
-          DEFAULT: '#F4B400',
-        },
-        success: {
-          DEFAULT: '#54FF04',
-        },
-        error: {
-          DEFAULT: '#FF0404',
-        },
-        disabled: {
-          DEFAULT: '#e0e0e0',
-        },
+        fb: {DEFAULT: '#4267B2'},
+        google: {DEFAULT: '#F4B400'},
+        success: {DEFAULT: '#54FF04'},
+        error: {DEFAULT: '#FF0404'},
+        disabled: {DEFAULT: '#e0e0e0'},
       },
     },
   },
   plugins: [],
-  corePlugins: require('tailwind-rn/unsupported-core-plugins'),
 };

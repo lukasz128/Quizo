@@ -1,17 +1,24 @@
-import {Button} from 'components/Button';
+import React from 'react';
 import {ImageSourcePropType} from 'react-native';
+import {Button} from '../../../components/Button';
 
 interface Props {
   type: 'fb' | 'google';
   disabled?: boolean;
+  style?: string;
   onClick?: () => void;
 }
 
-export default function SocialButton({type, disabled = false, onClick}: Props) {
+export default function SocialButton({
+  type,
+  disabled = false,
+  style,
+  onClick,
+}: Props) {
   const icon: ImageSourcePropType =
     type === 'fb'
-      ? require('./assets/icons/fb-logo.png')
-      : require('./assets/icons/google-logo.png');
+      ? require('../../../assets/icons/fb-logo.png')
+      : require('../../../assets/icons/google-logo.png');
 
   return (
     <Button
@@ -19,6 +26,7 @@ export default function SocialButton({type, disabled = false, onClick}: Props) {
       color={type}
       icon={icon}
       disabled={disabled}
+      style={style}
       onClick={onClick}
       content={`Zaloguj sie przez ${
         type === 'fb' ? 'facebook' : 'google'
