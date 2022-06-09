@@ -17,7 +17,7 @@ export default function SocialButton({
 }: Props) {
   const icon: ImageSourcePropType =
     type === 'fb'
-      ? require('../../../assets/icons/fb-logo.png')
+      ? require('../../../assets/icons/fb-logo2.png')
       : require('../../../assets/icons/google-logo.png');
 
   return (
