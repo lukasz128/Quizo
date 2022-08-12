@@ -1,10 +1,11 @@
 import React from 'react';
-import LoginPage from './views/login-page/LoginPage';
+import HomePage from './views/HomePage/HomePage';
 
 export default function Main() {
   return (
     <>
-      <LoginPage />
+      {/* <LoginPage /> */}
+      <HomePage />
     </>
   );
 }

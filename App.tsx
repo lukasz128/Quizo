@@ -1,15 +1,16 @@
 import {StatusBar} from 'expo-status-bar';
-import {ScrollView} from 'react-native';
-import Main from './src/Main';
-import tw from './src/lib/tailwind';
+import React from 'react';
+import {View} from 'react-native';
 import {useDeviceContext} from 'twrnc';
+import tw from './src/lib/tailwind';
+import Main from './src/Main';
 
 export default function App() {
   useDeviceContext(tw);
   return (
-    <ScrollView>
+    <View>
       <Main />
-      <StatusBar />
-    </ScrollView>
+      <StatusBar style="light" />
+    </View>
   );
 }
